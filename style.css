@@ -4,9 +4,9 @@ body {
 
 header {
     background-color: #333;
-    padding: 10px;
+    padding: 0;
     position: sticky;
-    top: 0;    
+    top: 0;
 }
 
 nav ul {
@@ -15,23 +15,14 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content:center;
-}
 
-li a {
-    display:block;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-block: 0;
 }
 
 nav ul li a {
     color: rgb(52, 201, 104);
+    padding: 14px 20px;
     text-decoration: none;
-    padding: 10px 20px;
-    margin: 0;
-
+    display:block;
 }
 
 nav ul li a:hover {
@@ -55,9 +46,29 @@ section {
     background-color: #d4e9bd;
 }
 
+.contenedorImagenText{
 
-.mi-imagen {
-    display: flex; 
-    max-width: 200px;
-    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
+.imagen_presentacion{
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    padding: 14px 20px;
+}
+
+.textos{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 14px;
+}
+/*.demasTextos{
+    position: absolute;
+    top: 150px;
+    right: 20px; 
+    color: rgb(0, 0, 0); 
+    padding: 5px 10px;
+}*/
