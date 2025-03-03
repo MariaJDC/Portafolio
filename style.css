@@ -23,52 +23,110 @@ nav ul li a {
     padding: 14px 20px;
     text-decoration: none;
     display:block;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 nav ul li a:hover {
     background-color: #555;
 }
 
-section {
-    padding: 60px 20px;
-    height: 100vh;
+.titulosSections {
+    font-family: "Outfit", serif;
+    margin-left: 100px;
+    margin-top: 30px;
 }
 
-#present {
+section {
+    padding: 60px 20px;
+    height: 100vh; /* hace que la seccion ocupe el 100% de la pantalla */
+}
+
+#sobreMi {
     background-color: #f4f4f4;
 }
 
-#caracter {
+#experienceIng {
     background-color: #ddd;
 }
 
-#dondeC {
-    background-color: #d4e9bd;
+#misRedes {
+    background-color: #745ba3;
 }
 
 .contenedorImagenText{
-
-    display: flex;
+    margin-top: 50px;
+    display: flex; /* da flexibilidad a sus elementos internos */
     align-items: center;
-    gap: 20px;
+    gap: 50px; /* el espacio entre los elementos hijos */
 }
 
 .imagen_presentacion{
-    width: 300px;
+    width: 600px;
     height: auto;
-    border-radius: 5px;
-    padding: 14px 20px;
+    border-radius: 40px;
+    padding: 20px;
+    margin-left: 70px;
+    margin-top: 0px;
 }
 
 .textos{
     color: rgb(0, 0, 0);
-    text-align: left;
-    padding: 14px;
+    width: 700px; /* tama;o del cuadro de texto */
 }
-/*.demasTextos{
-    position: absolute;
-    top: 150px;
-    right: 20px; 
-    color: rgb(0, 0, 0); 
+
+.contenedorImagenesRedes{
+    display: flex;
+    justify-content: left;
+    gap: 900px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.imagenRedes{
+    width: 150px;
+    height: auto;
+    border-radius: 50px;
+    padding: 90px;
+}
+
+.imagenRedes img{ /*modificacion para imagenes del contenedor*/
+    width: 100%; /*hace que ocupen el 100 del tama;o que eleji en el contenedor*/
+    height: auto; /*mantiene la proporcion de la imgen*/
+    margin: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.img_footer{
+    width: 30px;
+    height: auto;
+    border-radius: 5px;
     padding: 5px 10px;
-}*/
+    left: 100px;
+}
+
+.textFooter{
+    left: 100px
+}
+
+
+footer nav a {
+    color: rgb(52, 201, 104);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px
+}
+
+footer nav a:hover {
+    background-color: #555;
+}
