@@ -67,7 +67,7 @@ section {
 }
 
 .contenedorImagenText{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex; /* da flexibilidad a sus elementos internos */
     align-items: center;
     gap: 50px; /* el espacio entre los elementos hijos */
