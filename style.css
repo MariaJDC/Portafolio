@@ -1,37 +1,44 @@
 body {
     margin: 0;
 }
-
 header {
-    background-color: #333;
+    background-color: #B799FF;
     padding: 0;
     position: sticky;
     top: 0;
+}
+nav{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content:center;
-
+    display: flex;;
 }
 
 nav ul li a {
-    color: rgb(52, 201, 104);
-    padding: 14px 20px;
+    color: rgb(0, 0, 0);
+    padding: 14px ;
     text-decoration: none;
     display:block;
-    font-family: "Outfit", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+    font-family: "Outfit", sans-serif;
+    justify-content:left;
+}
+
+nav img {
+    height: auto;
+    width: 50px; 
+    margin-right: 10px;
+    margin-left: 20px;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #ad89ff;
 }
+
 
 .titulosSections {
     font-family: "Outfit", serif;
@@ -45,15 +52,21 @@ section {
 }
 
 #sobreMi {
-    background-color: #f4f4f4;
+    background-color: #E8F9FF;
 }
 
 #experienceIng {
-    background-color: #ddd;
+    background-color: #E8F9FF;
 }
 
 #misRedes {
-    background-color: #745ba3;
+    background-color: #E8F9FF;
+}
+
+.tituloMisRedes{
+    font-family: "Outfit", serif;
+    text-align: center;
+    padding: 50px 10px;
 }
 
 .contenedorImagenText{
@@ -61,6 +74,7 @@ section {
     display: flex; /* da flexibilidad a sus elementos internos */
     align-items: center;
     gap: 50px; /* el espacio entre los elementos hijos */
+    font-family: "Outfit", serif;
 }
 
 .imagen_presentacion{
@@ -73,38 +87,46 @@ section {
 }
 
 .textos{
+    font-size: 20px;
     color: rgb(0, 0, 0);
     width: 700px; /* tama;o del cuadro de texto */
 }
 
+
 .contenedorImagenesRedes{
+    margin: 20px auto;
     display: flex;
-    justify-content: left;
-    gap: 900px;
+    justify-content: center;
+    gap: 10px;
     text-align: center;
-    background-color: #ddd;
+    background-color: #C5D3E8;
     border-radius: 10px;
+    width: fit-content; /*el ancho se ajusta a sus elemntos*/
 }
 
 .imagenRedes{
-    width: 150px;
+    width: 300px;
     height: auto;
     border-radius: 50px;
-    padding: 90px;
+    margin: 30px;
 }
 
 .imagenRedes img{ /*modificacion para imagenes del contenedor*/
     width: 100%; /*hace que ocupen el 100 del tama;o que eleji en el contenedor*/
     height: auto; /*mantiene la proporcion de la imgen*/
-    margin: 10px;
+}
+
+.nombreRedes{
+    font-family: "Outfit", serif;
+    font-weight: 700;
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
+  background-color: #B799FF;
+  color: #1D1616;
+  padding: 20px 20px;
   display: flex;
-  align-items: center;
+  align-items:center;
 }
 
 .img_footer{
@@ -112,21 +134,27 @@ footer {
     height: auto;
     border-radius: 5px;
     padding: 5px 10px;
-    left: 100px;
 }
 
-.textFooter{
-    left: 100px
+.textFooterContactos{
+     margin-left: auto;
+     font-weight: 700;
 }
 
-
-footer nav a {
-    color: rgb(52, 201, 104);
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 20px
+.otroTextFooter{
+    margin-left: 500px;
+    color: #1D1616;
 }
 
-footer nav a:hover {
-    background-color: #555;
+.miPortafolio{
+    color: #1D1616;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+
+}
+
+footer img{
+    height: auto;
+    width: 50px; 
 }

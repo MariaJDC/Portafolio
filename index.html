@@ -6,14 +6,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Sigmar&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">    <title>Mi portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Sigmar&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Mi portafolio</title>
 </head>
 
 <body>
     
     <header>
-        <nav>
+        <nav>                
+            <img src="nube.png" alt="">
             <ul>
+
                 <li><a href="#sobreMi">Sobre Mí</a></li>
                 <li><a href="#experienceIng">Mi Experiencia en Ingenieria</a></li>
                 <li><a href="#misRedes">Mis Redes</a></li>
@@ -22,11 +25,11 @@
     </header>
 
     <section id="sobreMi">
-        <h1 class="titulosSections">Un Poco Sobre Mi</h1>
         <div class="contenedorImagenText">
             <img class="imagen_presentacion" src="fotoPresentPort.jpg">
             <div class="textos">
-                <p> Hola, Profe!</p>
+                <h1>Un Poco Sobre Mi</h1>
+                <p> Holis! </p>        
                 <p>Bueno, para comenza... Mi nombre es Maria Jesus Rojas Marcano, soy estudiante de ingenieria de sistemas de la universidad de Margarira, 
                     cursante del 7mo trimestre. <br> <br>
                     Naci el 29 de agosto de 2005 y tengo 19 años. Tengo una familia pequeña donde solo somos mi hermano, mis padres, mi perro Milo, 
@@ -43,13 +46,10 @@
             </div>
         </div>
     </section>
-
-    
     <section id="experienceIng">
-        <h1 class="titulosSections">Mí Experiencia en Ingeniería</h1>
         <div class="contenedorImagenText">
-            <img class="imagen_presentacion" src="C:\ProgramacionIV\Portafolio\logoInstagram.webp" alt="Imagen de Hora de Aventura">
-            <div class="textos">
+            <img class="imagen_presentacion" src="imgMiExp.jpg">
+            <div class="textos">        
                 <h1>Experiencia en ingenieria</h1>
                 <p> Cuando empecé la carrera, la verdad es que no me fue muy bien. 
                     Cometí muchos errores y sentía miedo porque no estaba acostumbrada a estar sola, a tener que construir nuevas relaciones y 
@@ -71,24 +71,32 @@
     </section>
         
     <section id="misRedes">
-        <h1 class="titulosSections">Mis Redes</h1>
+        <h1 class="tituloMisRedes">Mis Redes</h1>
         <div class="contenedorImagenesRedes">
             <div class="imagenRedes">
-                <p>Instagram<img src="logoInstagram.webp" alt=""></p>  
-                <p>Facebook<img src="logoFacebook.png" alt=""> </p>
+                <p class="nombreRedes"> Instagram </p>
+                <a href="https://www.instagram.com/mar_j.29/"><img src="instagram.png" alt=""></a>  
+            </div>
+            <div class="imagenRedes">
+                <p class="nombreRedes"> Facebook </p>
+                    <a href="https://www.facebook.com/profile.php?id=100008202854715"><img src="facebook.png" alt=""></a>
             </div>
         </div>
     </section>
 
     <footer>
-        <a href="https://www.instagram.com/mar_j.29/">
-                    <img src="logoInstagram.webp" class="img_footer">
-        <div class="textFooter">
-            <p>Todos los derechos reservados 2021</p>
-            
-            </a>
+        <img src="nube.png" alt="">
+                    <img src="" class="img_footer">
+                    <p class="miPortafolio">
+                        Mi Portafolio
+                    </p>
+        <div class="otroTextFooter">
+            <p>© 2023 Portafolio</p>
         </div>
-
+        <div class="textFooterContactos">
+            <p><a href="https://wa.me/584120960684">Contacto</a></p>
+            <p>Correo: mrojas.7441@unimar.edu.ve</p>
+        </div>
     </footer>
 </body>
 </html>
