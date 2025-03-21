@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="nube.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Sigmar&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <meta name="Maria Rojas" content="Portafolio sobre mi">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/883fdf1db1.js" crossorigin="anonymous"></script>
     <title>Mi portafolio</title>
 </head>
 
@@ -22,6 +24,7 @@
                 <li><a href="#sobreMi">Sobre Mí</a></li>
                 <li><a href="#experienceIng">Mi Experiencia en Ingenieria</a></li>
                 <li><a href="#misRedes">Mis Redes</a></li>
+                <li><a href="#comentarios">comentarios</a></li>
             </ul>
         </nav>
     </header>
@@ -88,6 +91,77 @@
             </div>
         </div>
     </section>
+
+    <h1 class= "text-center p-3">prueba conexion</h1>
+
+    <section id='comentarios'>
+        <h1>Comentarios</h1>
+
+        <div class = "conteiner-fluid row">
+            <form class= "col-3">
+                <div class="mb-3">
+                    <label for="formNombreApellido" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="formNombreApellido" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <!-- <label for="formNombreUsuario" class="form-label">Usuario</label> -->
+                    <input type="text" class="form-control" id="formNombreUsuario" aria-describedby="emailHelp" placeholder="usuario">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="formEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label for="formComentario" class="form-label">Escribe Comentario</label>
+                    <input type="text" class="form-control" id="formComentario" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label for="formFechaComentario" class="form-label">Escribe Comentario</label>
+                    <input type="text" class="form-control" id="formFechaComentario" aria-describedby="emailHelp">
+                </div>
+
+                <button type="submit" class="btn btn-warning">Enviar</button>
+            </form>
+            <div class= "col-9 p-4">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre y Apellido</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Comentario</th>
+                        <th scope="col">Fecha y Hora</th>
+                        </tr>
+                    </thead>
+
+                    
+                    <tbody class="text-center p-4">
+                        <?php
+                        include "model/conn.php";
+                        $sql = $conn->query(query: " select * from usuarios "); 
+                        while ($datos = $sql->fetch_object())  { ?>
+                            <tr>
+                                <th><?=$datos->id?></th>
+                                <td><?=$datos->nombreyapellido?></td>
+                                <td><?=$datos->usuario?></td>
+                                <td><?=$datos->email?></td>
+                                <td><?=$datos->nota?></td>
+                                <td><?=$datos->fechanota?></td>
+                            </tr>
+                        
+                        <?php } ?>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
 
     <footer>
         <img src="imagenes/nube.png" alt="">
