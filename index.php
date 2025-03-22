@@ -92,73 +92,74 @@
         </div>
     </section>
 
-    <h1 class= "text-center p-3">prueba conexion</h1>
+    <h1 class="text-center p-3">Prueba conexión</h1>
 
-    <section id='comentarios'>
-        <h1>Comentarios</h1>
+<section id="comentarios">
+    <h1>Comentarios</h1>
 
-        <div class = "conteiner-fluid row">
-            <form class= "col-3">
-                <div class="mb-3">
-                    <label for="formNombreApellido" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="formNombreApellido" aria-describedby="emailHelp">
-                </div>
-
-                <div class="mb-3">
-                    <!-- <label for="formNombreUsuario" class="form-label">Usuario</label> -->
-                    <input type="text" class="form-control" id="formNombreUsuario" aria-describedby="emailHelp" placeholder="usuario">
-                </div>
-                
-                <div class="mb-3">
-                    <label for="formEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp">
-                </div>
-
-                <div class="mb-3">
-                    <label for="formComentario" class="form-label">Escribe Comentario</label>
-                    <input type="text" class="form-control" id="formComentario" aria-describedby="emailHelp">
-                </div>
-
-                <div class="mb-3">
-                    <label for="formFechaComentario" class="form-label">Escribe Comentario</label>
-                    <input type="text" class="form-control" id="formFechaComentario" aria-describedby="emailHelp">
-                </div>
-
-                <button type="submit" class="btn btn-warning">Enviar</button>
-            </form>
-            <div class= "col-9 p-4">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nombre y Apellido</th>
-                        <th scope="col">Usuario</th>
-                        <th scope="col">Correo</th>
-                        <th scope="col">Comentario</th>
-                        <th scope="col">Fecha y Hora</th>
-                        </tr>
-                    </thead>
-
-                    
-                    <tbody class="text-center p-4">
-                        <?php
-                        include "model/conn.php";
-                        $sql = $conn->query(query: " select * from usuarios "); 
-                        while ($datos = $sql->fetch_object())  { ?>
-                            <tr>
-                                <th><?=$datos->id?></th>
-                                <td><?=$datos->nombreyapellido?></td>
-                                <td><?=$datos->usuario?></td>
-                                <td><?=$datos->email?></td>
-                                <td><?=$datos->nota?></td>
-                                <td><?=$datos->fechanota?></td>
-                            </tr>
-                        
-                        <?php } ?>
-                        
-                    </tbody>
-                </table>
+    <div class="container-fluid row">
+        <form class="col-3" method="post" action="">
+            <div class="mb-3">
+                <label for="NombreApellido" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="NombreApellido">
             </div>
+
+            <div class="mb-3" class="form-floating">
+                <label for="Usuario" class="form-label">Usuario</label>
+                <input type="text" class="form-control" name="Usuario">
+            </div>
+            
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="Email">
+            </div>
+
+            <div class="textArea">
+                <textarea class="form-control" placeholder="Comentario" name="textComentario"></textarea>
+            </div>
+
+            <?php
+                include "model/conn.php";
+                include "controler/new_user.php";
+            ?>
+
+            <button type="submit" class="btn btn-warning" name="btnguardar" value="okys">Guardar</button>
+        </form>
+
+    <div class= "col-9 p-4">
+        <table class="table table-bordered">
+            <thead>
+                <tr class= "text-center">
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre y Apellido</th>
+                    <th scope="col">Usuario</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Comentario</th>
+                    <th scope="col">Fecha y Hora</th>
+                </tr>
+            </thead>
+   
+            <tbody class="text-center p-4">
+                <?php
+                include "model/conn.php";
+                $sql = $conn->query(query: " select * from usuarios "); 
+                while ($datos = $sql->fetch_object())  { ?>
+                    <tr>
+                        <th><?=$datos->id?></th>
+                        <td><?=$datos->nombreyapellido?></td>
+                        <td><?=$datos->usuario?></td>
+                        <td><?=$datos->email?></td>
+                        <td><?=$datos->nota?></td>
+                        <td><?=$datos->fechanota?></td>
+                        <td><a href="edit_index.php?id=<?= $datos->id ?>"  class="fa-solid fa-pen"></a></td>
+                        <td><a href="" class="fa-solid fa-trash" style= "color:#CD1818"></a></td>
+                    </tr>
+                
+                <?php } ?>
+                
+            </tbody>
+        </table>
+    </div>
         </div>
     </section>
 

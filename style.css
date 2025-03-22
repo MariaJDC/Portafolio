@@ -150,3 +150,13 @@ footer img{
     height: auto;
     width: 50px; 
 }
+
+.textArea{
+    min-height: 100px;   
+}
+
+.form{
+    margin: auto;
+    border-color: #ad89ff;
+}
+
