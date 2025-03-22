@@ -28,6 +28,7 @@
             </ul>
         </nav>
     </header>
+    
 
     <section id="sobreMi">
         <div class="contenedorImagenText">
@@ -94,24 +95,25 @@
 
     <h1 class="text-center p-3">Prueba conexión</h1>
 
-<section id="comentarios">
-    <h1>Comentarios</h1>
+<section id="comentarios">    
+    
 
-    <div class="container-fluid row">
+    <div class="contenedorComentarios">
+    
+    <div class="container-fluid row">    
         <form class="col-3" method="post" action="">
+           <h1 class="comentarioTitulo">Realice un Comentario</h1>
+
             <div class="mb-3">
-                <label for="NombreApellido" class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="NombreApellido">
+                <input type="text" class="form-control" placeholder="Nombre y Apellido" name="NombreApellido">
             </div>
 
             <div class="mb-3" class="form-floating">
-                <label for="Usuario" class="form-label">Usuario</label>
-                <input type="text" class="form-control" name="Usuario">
+                <input type="text" class="form-control" placeholder="Usuario" name="Usuario">
             </div>
             
             <div class="mb-3">
-                <label for="Email" class="form-label">Email</label>
-                <input type="email" class="form-control" name="Email">
+                <input type="email" class="form-control" placeholder="Email" name="Email">
             </div>
 
             <div class="textArea">
@@ -152,7 +154,6 @@
                         <td><?=$datos->nota?></td>
                         <td><?=$datos->fechanota?></td>
                         <td><a href="edit_index.php?id=<?= $datos->id ?>"  class="fa-solid fa-pen"></a></td>
-                        <td><a href="" class="fa-solid fa-trash" style= "color:#CD1818"></a></td>
                     </tr>
                 
                 <?php } ?>
@@ -160,6 +161,7 @@
             </tbody>
         </table>
     </div>
+        </div>
         </div>
     </section>
 
