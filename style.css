@@ -49,19 +49,19 @@ section {
 }
 
 #sobreMi {
-    background-color: #E8F9FF;
+    background-color: #F79BD3;
 }
 
 #experienceIng {
-    background-color: #E8F9FF;
+    background-color: #F79BD3;
 }
 
 #misRedes {
-    background-color: #E8F9FF;
+    background-color: #F79BD3;
 }
 
 #comentarios{
-    background-color: #E8F9FF;
+    background-color: #F79BD3;
 }
 
 .tituloMisRedes{
@@ -103,22 +103,18 @@ section {
 }
 
 .imagenRedes{
-    width: 300px;
+    width: 40px;
     height: auto;
     border-radius: 50px;
-    margin: 30px;
 }
 
 .imagenRedes img{ /*modificacion para imagenes del contenedor*/
     width: 100%; /*hace que ocupen el 100 del tama;o que eleji en el contenedor*/
     height: auto; /*mantiene la proporcion de la imgen*/
+    margin-right:auto ;
 }
 
-.nombreRedes{
-    font-size: 20px;
-    font-family: "Outfit", serif;
-    font-weight: 700;
-}
+
 
 footer {
   background-color: #B799FF;
@@ -126,6 +122,7 @@ footer {
   padding: 20px 20px;
   display: flex;
   align-items:center;
+  gap: 10px;
 }
 
 .img_footer{

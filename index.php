@@ -24,8 +24,7 @@
                 <li><a href="#presentacion">Presentación</a></li>
                 <li><a href="#sobreMi">Sobre Mí</a></li>
                 <li><a href="#experienceIng">Mi Experiencia en Ingenieria</a></li>
-                <li><a href="#misRedes">Mis Redes</a></li>
-                <li><a href="#comentarios">comentarios</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
             </ul>
         </nav>
     </header>
@@ -87,22 +86,6 @@
             </div>
         </div>
     </section>
-        
-    <section id="misRedes">
-        <h1 class="tituloMisRedes">Mis Redes</h1>
-        <div class="contenedorImagenesRedes">
-            <div class="imagenRedes">
-                <p class="nombreRedes"> Instagram </p>
-                <a href="https://www.instagram.com/mar_j.29/"><img src="imagenes/instagram.png" alt=""></a>  
-            </div>
-            <div class="imagenRedes">
-                <p class="nombreRedes"> Facebook </p>
-                    <a href="https://www.facebook.com/profile.php?id=100008202854715"><img src="imagenes/facebook.png" alt=""></a>
-            </div>
-        </div>
-    </section>
-
-    <h1 class="text-center p-3">Prueba conexión</h1>
 
 <section id="comentarios">    
     
@@ -175,19 +158,25 @@
     </section>
 
 
-    <footer>
+    <footer>                    
+        <p class="miPortafolio"> Mi Portafolio</p>
         <img src="imagenes/nube.png" alt="">
-                    <img src="" class="img_footer">
-                    <p class="miPortafolio">
-                        Mi Portafolio
-                    </p>
+
         <div class="otroTextFooter">
             <p>© 2023 Portafolio</p>
         </div>
-        <div class="textFooterContactos">
-            <p><a href="https://wa.me/584120960684">Contacto</a></p>
-            <p>Correo: mrojas.7441@unimar.edu.ve</p>
+
+        <div class="imagenRedes">
+            <a href="https://www.instagram.com/mar_j.29/"><img src="imagenes/instagram.png" alt=""></a> 
+            <a href="https://www.facebook.com/profile.php?id=100008202854715"><img src="imagenes/facebook.png" alt=""></a>
+            </div>                
+                <div class="textFooterContactos">
+                <p><a href="https://wa.me/584120960684">Contacto</a></p>
+                <p>Correo: mrojas.7441@unimar.edu.ve</p>
+                <img src="" class="img_footer">          
         </div>
+            </div>
+
     </footer>
 </body>
 </html>
