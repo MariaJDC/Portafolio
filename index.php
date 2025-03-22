@@ -21,6 +21,7 @@
             <img src="imagenes/nube.png" alt="">
             <ul>
 
+                <li><a href="#presentacion">Presentación</a></li>
                 <li><a href="#sobreMi">Sobre Mí</a></li>
                 <li><a href="#experienceIng">Mi Experiencia en Ingenieria</a></li>
                 <li><a href="#misRedes">Mis Redes</a></li>
@@ -28,7 +29,15 @@
             </ul>
         </nav>
     </header>
-    
+
+    <section id="presentacion">
+        <div class="contenedorImagenText">
+            <img class="imagen_presentacion" src="imagenes\Imagen de WhatsApp 2025-03-21 a las 23.47.54_6de07940.jpg">
+            <div class="textos">
+                <h1>Holis! Mi nombre es Maria Rojas</h1>
+            </div>
+        </div>
+    </section>
 
     <section id="sobreMi">
         <div class="contenedorImagenText">
